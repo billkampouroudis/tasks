@@ -7,7 +7,7 @@ import prettier from 'eslint-plugin-prettier';
 /** @type {import('eslint').Linter.Config[]} */
 export default [
   pluginJs.configs.recommended,
-  ...tseslint.configs.recommended,
+  tseslint.configs.base,
   pluginReact.configs.flat.recommended,
   {
     files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
